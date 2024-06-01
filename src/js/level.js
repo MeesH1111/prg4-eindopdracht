@@ -137,7 +137,7 @@ export class Level extends Scene {
         this.score++
         this.mylabel.text = `Score: ${this.score}`
 
-        if (this.score === 1) {
+        if (this.score === 10) {
             this.spawnTowerup()
             const tower = new Tower
             tower.kill()

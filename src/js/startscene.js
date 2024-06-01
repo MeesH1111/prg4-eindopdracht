@@ -60,7 +60,7 @@ export class Startscene extends Scene {
         this.add(button)
 
         this.add(gameinfo)
-        gameinfo.text = 'Shoot the Slimesd'
+        gameinfo.text = 'Shoot the Slimes'
 
         this.add(score)
         score.text = `Highscore: ${localStorage.getItem('highscore')}`
