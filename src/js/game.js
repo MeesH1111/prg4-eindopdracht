@@ -1,26 +1,31 @@
 import '../css/style.css'
 import { Actor, Engine, Vector, DisplayMode } from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
+import { Enemy } from './enemy.js'
+import { Boss } from './boss.js'
+import { UI } from './ui.js'
+import { Tower } from './tower.js'
+import { Level } from './level.js'
+import { Startscene } from './startscene.js'
+import { Endscene } from './endscene.js'
 
 export class Game extends Engine {
 
     constructor() {
-        super({ 
-            width: 1280,
-            height: 720,
+        super({
+            width: 1024,
+            height: 704,
             maxFps: 60,
             displayMode: DisplayMode.FitScreen
-         })
+        })
         this.start(ResourceLoader).then(() => this.startGame())
     }
 
     startGame() {
-        console.log("start de game!")
-        const fish = new Actor()
-        fish.graphics.use(Resources.Fish.toSprite())
-        fish.pos = new Vector(400, 300)
-        fish.vel = new Vector(-10,0)
-        this.add(fish)
+        this.add('level', new Level)
+        this.add('startscene', new Startscene)
+        this.add('endscene', new Endscene)
+        this.goToScene('startscene')
     }
 }
 
