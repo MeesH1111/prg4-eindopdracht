@@ -86,7 +86,6 @@ export class Level extends Scene {
     }
 
     spawnEnemy() {
-
         this.enemyspeed += 10
 
         this.enemy = new Enemy(this.enemyspeed)
@@ -142,7 +141,6 @@ export class Level extends Scene {
             const tower = new Tower
             tower.kill()
             console.log('tower2')
-
         }
     }
 

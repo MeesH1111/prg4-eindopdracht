@@ -48,5 +48,4 @@ export class Endscene extends Scene {
         this.engine.goToScene('startscene')
     }
 
-
 }
