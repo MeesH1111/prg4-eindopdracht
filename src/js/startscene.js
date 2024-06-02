@@ -71,11 +71,6 @@ export class Startscene extends Scene {
         button.on("pointerup", (event) => this.switchScene())
     }
 
-    // addButton() {
-    //     const playbutton = new Playbutton
-    //     this.add(playbutton)
-    // }
-
     switchScene(Engine) {
         this.engine.goToScene('level')
     }

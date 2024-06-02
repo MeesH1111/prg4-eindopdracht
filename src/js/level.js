@@ -147,6 +147,8 @@ export class Level extends Scene {
     }
 
     onDeactivate() {
+        this.enemyspeed = 150
+        this.bossspeed = 100
         console.log(this.score)
         console.log(localStorage.getItem('highscore'))
 
@@ -160,9 +162,6 @@ export class Level extends Scene {
         this.actors.forEach(actor => {
             this.remove(actor)
         })
-
-        this.enemyspeed = 150
-        this.bossspeed = 100
 
         this.score = 0
 

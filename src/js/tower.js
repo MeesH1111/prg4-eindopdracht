@@ -40,11 +40,11 @@ export class Tower extends Actor {
         }
         if (kb.isHeld(Keys.A) || kb.isHeld(Keys.Left)) {
             xspeed = -300
-            this.graphics.flipHorizontal = false     // flip de sprite
+            this.graphics.flipHorizontal = false
         }
         if (kb.isHeld(Keys.D) || kb.isHeld(Keys.Right)) {
             xspeed = 300
-            this.graphics.flipHorizontal = true        // flip de sprite
+            this.graphics.flipHorizontal = true
         }
         this.vel = new Vector(xspeed, yspeed)
 
@@ -60,7 +60,6 @@ export class Tower extends Actor {
 
         bullet.vel = new Vector(-500, 0)
         this.addChild(bullet)  // Compostion met addchild()
-        console.log('halloapadoasodasod')
 
         bullet
     }

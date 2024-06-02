@@ -1,7 +1,6 @@
 import { ImageSource, Sound, Resource, Loader, FontSource, Font } from 'excalibur'
 import { Placehold } from './placehold'
 
-// voeg hier jouw eigen resources toe
 const Resources = {
     Fish: new ImageSource('images/fish.png'),
     Map: new ImageSource('images/top_down_map.png'),
@@ -15,7 +14,6 @@ const Resources = {
     Startscenebg: new ImageSource('images/top_down_map_with_blur2.png'),
     Endscenebg: new ImageSource('images/top_down_map_with_blur.png'),
     Gameover: new ImageSource('images/gameover2.png')
-    // Font: new FontSource('fonts/04B_30.ttf', '04b') FONT WERKT NIET. OVER VRAGEN TIJDENS LES
 }
 
 

@@ -13,9 +13,6 @@ export class Towerup extends Tower /* Inherint class */ {
     onInitialize() {
         this.sprite = Resources.Towerup.toSprite()
         this.graphics.use(this.sprite)
-
-        // this.pos.y = this.y
-        // this.pos.x = this.x
     }
 
     onPreUpdate(engine) {
@@ -31,11 +28,11 @@ export class Towerup extends Tower /* Inherint class */ {
         }
         if (kb.isHeld(Keys.A) || kb.isHeld(Keys.Left)) {
             xspeed = -300
-            this.graphics.flipHorizontal = false     // flip de sprite
+            this.graphics.flipHorizontal = false
         }
         if (kb.isHeld(Keys.D) || kb.isHeld(Keys.Right)) {
             xspeed = 300
-            this.graphics.flipHorizontal = true        // flip de sprite
+            this.graphics.flipHorizontal = true
         }
         this.vel = new Vector(xspeed, yspeed)
 
@@ -51,7 +48,6 @@ export class Towerup extends Tower /* Inherint class */ {
 
         bullet.vel = new Vector(-500, 0)
         this.addChild(bullet)  // Compostion met addchild()
-        console.log('halloapadoasodasod')
 
         bullet
     }

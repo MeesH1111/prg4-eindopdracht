@@ -24,16 +24,6 @@ export class Endscene extends Scene {
         gm.graphics.use(Resources.Gameover.toSprite())
         gm.pos = new Vector(520, 130)
         this.add(gm)
-        // let gameover = new Label({
-        //     text: 'GAME OVER',
-        //     pos: new Vector(275, 120),
-        //     font: new Font({
-        //         family: 'impact',
-        //         size: 96,
-        //         unit: FontUnit.Px,
-        //         color: Color.Red
-        //     })
-        // })
 
         let playagain = new Label({
             text: 'PLAY AGAIN?',
@@ -45,9 +35,6 @@ export class Endscene extends Scene {
                 color: Color.Black
             })
         })
-
-        // this.add(gameover)
-        // gameover.text = 'GAME OVER'
 
         this.add(playagain)
         playagain.text = 'PLAY AGAIN?'

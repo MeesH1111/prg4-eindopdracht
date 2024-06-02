@@ -14,6 +14,5 @@ export class Playbuttonend extends Playbutton {
         this.pos = new Vector(512, 352)
 
         this.enableCapturePointer = true
-        // this.on("pointerup", (event) => this.switchScene())
     }
 }

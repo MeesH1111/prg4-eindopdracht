@@ -30,11 +30,5 @@ export class Enemy extends Actor {
             moveTo(new Vector(Math.random() * (830 - 770) + 770, Math.random() * (375 - 325) + 325), this.speed).
             moveTo(new Vector(Math.random() * (1120 - 1080) + 1080, Math.random() * (380 - 320) + 320), this.speed)
 
-
-        // this.on("exitviewport", (event) => this.Engine.goToScene('endscene'))
     }
-
-    // switchScene(Engine) {
-    //     this.engine.goToScene('endscene')
-    // }
 }
