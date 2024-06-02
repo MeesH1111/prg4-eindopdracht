@@ -161,9 +161,13 @@ export class Level extends Scene {
             this.remove(actor)
         })
 
+        this.enemyspeed = 150
+        this.bossspeed = 100
+
         this.score = 0
 
         this.onInitialize(this.engine)
+
 
     }
 
