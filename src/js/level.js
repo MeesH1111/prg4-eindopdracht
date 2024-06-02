@@ -3,10 +3,8 @@ import { Actor, Engine, Vector, DisplayMode, Scene, Timer, Label, Font, FontUnit
 import { Resources, ResourceLoader } from './resources.js'
 import { Enemy } from './enemy.js'
 import { Boss } from './boss.js'
-import { UI } from './ui.js'
 import { Tower } from './tower.js'
 import { Playbutton } from './playbutton.js'
-import { Placehold } from './placehold.js'
 import { Bullet } from './bullet.js'
 import { Towerup } from './towerup.js'
 

@@ -1,5 +1,4 @@
 import { ImageSource, Sound, Resource, Loader, FontSource, Font } from 'excalibur'
-import { Placehold } from './placehold'
 
 const Resources = {
     Fish: new ImageSource('images/fish.png'),

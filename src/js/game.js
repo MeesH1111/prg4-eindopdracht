@@ -3,7 +3,6 @@ import { Actor, Engine, Vector, DisplayMode } from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
 import { Enemy } from './enemy.js'
 import { Boss } from './boss.js'
-import { UI } from './ui.js'
 import { Tower } from './tower.js'
 import { Level } from './level.js'
 import { Startscene } from './startscene.js'
